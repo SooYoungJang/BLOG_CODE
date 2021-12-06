@@ -1,5 +1,7 @@
 package com.example.kotlin_basic
 
+import android.util.Log
+import com.example.defining_and_calling_functions.DefiningFunctionExample1
 import org.junit.Test
 
 import org.junit.Assert.*
@@ -12,6 +14,8 @@ import org.junit.Assert.*
 class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+        val list = listOf(1,2,3)
+        val result = DefiningFunctionExample1().joinToString(list, ":", "!" , "@" )
+        println(result)
     }
 }
