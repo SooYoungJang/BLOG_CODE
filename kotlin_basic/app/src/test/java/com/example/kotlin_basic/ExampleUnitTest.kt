@@ -2,6 +2,8 @@ package com.example.kotlin_basic
 
 import android.util.Log
 import com.example.defining_and_calling_functions.DefiningFunctionExample1
+import com.example.defining_and_calling_functions.ExtensionFunction
+import com.example.defining_and_calling_functions.to2xMutiple
 import org.junit.Test
 
 import org.junit.Assert.*
@@ -13,9 +15,10 @@ import org.junit.Assert.*
  */
 class ExampleUnitTest {
     @Test
-    fun addition_isCorrect() {
-        val list = listOf(1,2,3)
-        val result = DefiningFunctionExample1().joinToString(list, ":", "!" , "@" )
-        println(result)
+    fun test_coding() {
+        val strings: String = "4"
+
+        println(" result =  "+ strings.to2xMutiple())
+
     }
 }
