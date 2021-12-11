@@ -2,6 +2,7 @@ package com.example.kotlin_basic
 
 import android.util.Log
 import com.example.class_object_interface.Button
+import com.example.class_object_interface.DefiningClass
 import com.example.defining_and_calling_functions.DefiningFunctionExample1
 import com.example.defining_and_calling_functions.ExtensionFunction
 import com.example.defining_and_calling_functions.to2xMutiple
@@ -17,9 +18,14 @@ import org.junit.Assert.*
 class ExampleUnitTest {
     @Test
     fun test_coding() {
-        val strings: String = "4"
+        val validate = DefiningClass.Client("eddy",9999)
+        val validate1 = DefiningClass.Client("eddy",9999)
+        if(validate == validate1) {
+            println("result = true")
+        }else {
+            println("result = false")
+        }
 
-        println(" result =  "+ strings.to2xMutiple())
 
     }
 }
