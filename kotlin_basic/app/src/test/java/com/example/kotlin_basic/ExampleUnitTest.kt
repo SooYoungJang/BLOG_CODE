@@ -23,7 +23,7 @@ class ExampleUnitTest {
         if(validate == validate1) {
             println("result = true")
         }else {
-            println("result = false")
+            println("result = falsㅋㅋ")ㅋ
         }
 
 
